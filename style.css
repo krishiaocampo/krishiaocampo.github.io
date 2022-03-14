@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Stylish\ Memphis.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.logo{
+    padding-top: 0%;
+    padding-left: 0%;
+    width: 160px;
+    cursor: pointer;
+    position: relative;
+}
+.featureimg{
+    height: 100%;
+    position:absolute;
+    bottom: 0;
+    left: 5%;
+}
+.card{
+    width: 350px;
+    height: 370px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-color: #a9c8d4;
+    background-size: cover;
+    left: 45%;
+    bottom: 5%;
+    position: absolute;
+    transition: transform 1s;
+    transition-duration: 1s;
+    box-shadow: 10px;
+}
+.card:hover{
+    background:  #b6ffef;;
+    transform: translateY(-20px)
+}
+.intro{
+    padding-left: 40%;
+}
+h1{
+    font-family:"Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+    background-color: #FFD9D0;
+}
+h1::before,
+h1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+h1::before{
+    background: #FFD9D0;
+    animation: typewriter 4s steps(18)
+    forwards;
+}
+h1::after{
+    width: 0.125em;
+    background: black;
+    animation: typewriter 4s steps(18) forwards, 
+        blink 750ms steps(18) infinite;
+}
+@keyframes typewriter{
+    to {left: 100%;}
+}
+@keyframes blink{
+    to{
+        background: transparent;
+    }
+}
+.socialLinks{
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+    
+}
+.socialLinks a{
+    text-decoration-style: none;
+    color: #1c4c5f;
+    padding-right: 10px;
+    font-size: 14px;
+}
+.logo1{
+    height: 15px;
+    width: 16px;
+}
+.logo2{
+    height: 15px;
+    width: 16px;
+}
+.logo3{
+    height: 15px;
+    width: 16px;
+}
+
